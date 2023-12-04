@@ -22,9 +22,10 @@ jobs:
       with:
         dotnet-version: 7.0.x
 
+    - name: Echo
+      run: echo "env ${NOSECRET}"
+
     # Execute all unit tests in the solution
     - name: Execute unit tests
       run: dotnet test
 
-    - name: Echo
-      run: echo "env ${MYSEC}"
