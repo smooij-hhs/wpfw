@@ -7,7 +7,7 @@ public class UnitTest1
     [Fact]
     public void Test1()
     {
-        Console.WriteLine("C# env: " + Environment.GetEnvironmentVariable("vars.NOSECRET"));
+        Console.WriteLine("C# env: " + Environment.GetEnvironmentVariable("NOSECRET"));
         Assert.Equal("Hello, World!", Program.hello());
     }
 }
