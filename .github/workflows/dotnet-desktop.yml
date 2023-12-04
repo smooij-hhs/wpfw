@@ -10,6 +10,8 @@ jobs:
   
   build:
     runs-on: ubuntu-latest
+      env:
+        MYSEC: ${{ secrets.MYSECRET }}
   
     steps:
     - name: Checkout
@@ -25,4 +27,6 @@ jobs:
       run: dotnet test
 
     - name: Echo
-      run: echo "secret ${{ secrets.MYSECRET }}"
+      run:
+        echo "secret ${{ secrets.MYSECRET }}"
+        echo "env ${MYSEC}"
