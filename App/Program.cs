@@ -3,7 +3,7 @@ public class Program
 {
     public static string hello()
     {
-        return "Hello, World!";
+        return "Hello, Word!";
     }
     static void Main(string[] args)
     {
