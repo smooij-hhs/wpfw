@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NOSECRET: ${{ vars.NOSECRET }}
+      NOSECRET: ${{ secrets.MYSECRET }}
   
     steps:
     - name: Checkout
