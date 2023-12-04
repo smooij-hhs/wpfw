@@ -1,8 +1,12 @@
 ﻿namespace App;
-class Program
+public class Program
 {
+    public static string hello()
+    {
+        return "Hello, World!";
+    }
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine(hello());
     }
 }
