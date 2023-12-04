@@ -27,6 +27,4 @@ jobs:
       run: dotnet test
 
     - name: Echo
-      run:
-        echo "secret ${{ secrets.MYSECRET }}"
-        echo "env ${MYSEC}"
+      run: echo "env ${MYSEC}"
