@@ -23,7 +23,7 @@ jobs:
         dotnet-version: 7.0.x
 
     - name: Echo
-      run: echo "env $NOSECRET"
+      run: echo "env {{vars.$NOSECRET}}"
 
     # Execute all unit tests in the solution
     - name: Execute unit tests
