@@ -6,11 +6,7 @@ public class Program
         return "Hello, World!";
     }
 
-    public static string secret()
-    {
-        return "ff";
-    }
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
         Console.WriteLine(hello());
     }
